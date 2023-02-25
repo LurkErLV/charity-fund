@@ -1,0 +1,25 @@
+.header {
+    text-align: center;
+
+    padding: 80px 0 70px 0;
+
+    background: #FFFFFF;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 27px;
+
+    color: #1D1E23;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 27px;
+
+    color: #1D1E23;
+
+    margin-top: 45px;
+}

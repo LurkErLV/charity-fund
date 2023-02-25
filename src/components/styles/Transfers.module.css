@@ -1,0 +1,244 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+
+    gap: 20px;
+
+    padding: 45px 0 80px 0;
+
+    background: rgba(14, 14, 14, 0.1);
+}
+
+.credentials {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 29px;
+
+    color: #1D1E23;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #60626D;
+
+    margin: 0;
+}
+
+.description:first-of-type {
+    margin-top: 15px;
+}
+
+.description:last-of-type {
+    margin-bottom: 30px;
+}
+
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 430px;
+}
+
+.payment_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+
+    width: 100%;
+
+    padding: 30px;
+
+    background: white;
+    border-radius: 12px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+.paymentType {
+    height: 65px;
+
+    border: 1px solid rgba(31, 31, 31, 0.1);
+    border-radius: 12px;
+
+    background: rgba(22, 22, 22, 0.1);
+
+    transition: all .2s;
+}
+
+.paymentType:hover {
+    border-color: rgba(31, 31, 31, 0.3);
+}
+
+.continue {
+    height: 60px;
+
+    border: none;
+    border-radius: 12px;
+
+    background: rgba(149, 185, 165, 1);
+
+    transition: all .2s;
+
+    margin-top: 30px;
+}
+
+.continue:hover {
+    background: rgb(130, 161, 143);
+}
+
+.questions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #ffffff;
+    border-radius: 12px;
+
+    width: 100%;
+
+    margin-top: 25px;
+    padding: 30px 25px 30px 25px
+}
+
+.question_block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+
+    width: 155px;
+    height: 35px;
+}
+
+.textIcon {
+    display: flex;
+
+    width: 33px;
+    height: 24px;
+
+    background: url("../icons/Text.svg") no-repeat center center;
+}
+
+.questionText {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+
+    color: #1D1E23;
+
+    margin: 0;
+}
+
+.support {
+    width: 108px;
+    height: 44px;
+
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+
+    padding: 15px;
+
+    background: rgba(29, 30, 35, 0.2);
+    border-radius: 12px;
+
+    color: #1D1E23;
+}
+
+.support:hover {
+    color: #1D1E23;
+    background: rgba(29, 30, 35, 0.4);
+}
+
+.info_container {
+    width: 890px;
+    height: 255px;
+
+    padding: 30px;
+
+    background: #ffffff;
+    border: 1px solid rgba(25, 25, 25, 0.1);
+    border-radius: 8px;
+
+    margin-bottom: 15px;
+}
+
+.currency {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #1D1E23;
+}
+
+.account_block {
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+}
+
+.account {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #60626D;
+
+    margin-top: 15px;
+}
+
+.copyIcon {
+    display: block;
+    
+    width: 24px;
+    height: 24px;
+
+    background: url("../icons/Copy.svg") no-repeat center;
+
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .wrapper {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 930px) {
+ .info_container {
+     width: 430px
+ }
+}
+
+@media screen and (max-width: 500px) {
+    .info_container {
+        width: 300px;
+        height: auto;
+    }
+
+    .payment_block {
+        width: 300px;
+    }
+}

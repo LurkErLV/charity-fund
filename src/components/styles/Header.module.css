@@ -1,0 +1,310 @@
+.header {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 520px;
+
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+
+    width: 1350px;
+
+    justify-content: space-between;
+
+    background: url("../images/header.svg") no-repeat center;
+}
+
+.textBlock {
+    margin: 65px 0 0 85px;
+}
+
+.textBlock .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+}
+
+.textBlock .name {
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 44px;
+    line-height: 66px;
+    letter-spacing: 1px;
+
+    text-shadow: -1px 0 #95B9A5, 0 1px #95B9A5, 1px 0 #95B9A5, 0 -1px #95B9A5;
+
+    margin-bottom: 40px;
+
+    color: #95B9A5;
+}
+
+.textBlock .support {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+
+    padding: 20px 32px 20px 32px;
+
+    border-radius: 11px;
+
+    background: #95B9A5;
+
+    color: #0C0C0C;
+    transition: all .3s;
+}
+
+.support:hover {
+    opacity: 0.7;
+}
+
+.withUsBlock {
+    display: flex;
+    align-items: center;
+
+    width: 390px;
+    height: 150px;
+
+    border-radius: 24px;
+
+    background: #EECD9B;
+}
+
+.gerb {
+    background: url("../images/GerbBig.svg") no-repeat center;
+
+    margin-left: 32px;
+
+    height: 83px;
+    width: 83px;
+}
+
+.withUsText {
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 18px;
+}
+
+.withUsText .title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1D1E23;
+}
+
+.withUsText .amount {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.amount .number {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    margin: 5px 0 0 5px;
+}
+
+.usersIcon {
+    width: 25px;
+    height: 25px;
+
+    background: url("../icons/Users.svg") no-repeat center;
+}
+
+@media screen and (max-width: 1400px) {
+    .header {
+        margin-top: 30px;
+    }
+
+    .container {
+        width: 900px;
+
+        background-size: 900px 345px;
+    }
+
+    .textBlock {
+        margin: 105px 0 0 30px;
+    }
+
+    .textBlock .title {
+        font-size: 22px;
+    }
+
+    .textBlock .name {
+        font-size: 37px;
+
+        margin-bottom: 30px;
+    }
+
+    .textBlock .support {
+        font-size: 13px;
+
+        padding: 17px 27px 17px 27px;
+    }
+
+    .withUsBlock {
+        width: 258px;
+        height: 100px;
+        margin-bottom: 85px;
+    }
+
+    .gerb {
+        background: url("../images/GerbMedium.svg") no-repeat center;
+
+        margin-left: 15px;
+
+        height: 70px;
+        width: 76px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header {
+        margin-top: -100px;
+    }
+
+    .container {
+        width: 600px;
+
+        background-size: 600px 230px;
+    }
+
+    .textBlock {
+        margin: 150px 0 0 25px;
+    }
+
+    .textBlock .title {
+        font-size: 17px;
+    }
+
+    .textBlock .name {
+        font-size: 27px;
+
+        line-height: 40px;
+
+        margin-bottom: 15px;
+
+        text-shadow: 0 0, 0 0, 0 0, 0 0;
+    }
+
+    .textBlock .support {
+        font-size: 13px;
+
+        padding: 12px 20px 12px 20px;
+    }
+
+    .withUsBlock {
+        width: 174px;
+        height: 67px;
+
+        margin-bottom: 145px;
+
+        border-radius: 10px;
+    }
+
+    .withUsText {
+        margin-left: 10px;
+    }
+
+    .gerb {
+        background: url("../images/GerbSmall.svg") no-repeat center;
+
+        margin-left: 10px;
+
+        height: 40px;
+        width: 60px;
+    }
+
+    .withUsText .title {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .amount .number {
+        font-size: 20px;
+        line-height: 25px;
+
+        margin: 5px 0 0 5px;
+    }
+
+    .usersIcon {
+        width: 25px;
+        height: 25px;
+
+        background: url("../icons/Users.svg") no-repeat center;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .container {
+        width: 100%;
+
+        align-items: center;
+
+        text-align: center;
+
+        background: black url("../images/header2.png") no-repeat top;
+    }
+
+    .textBlock .title {
+        font-size: 20px;
+    }
+
+    .textBlock .name {
+        font-size: 27px;
+
+        line-height: 50px;
+
+        margin-bottom: 30px;
+    }
+
+    .textBlock .support {
+        font-size: 17px;
+
+        padding: 17px 25px 17px 25px;
+    }
+
+    .withUsBlock {
+        width: 258px;
+        height: 100px;
+
+        margin:0 0 20px 20px;
+
+        text-align: left;
+
+        border-radius: 10px;
+    }
+
+    .gerb {
+        background: url("../images/GerbMedium.svg") no-repeat center;
+
+        margin-left: 15px;
+
+        height: 70px;
+        width: 76px;
+    }
+
+    .withUsText .title {
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        color: #1D1E23;
+
+        margin-left: 0px;
+    }
+
+    .amount {
+        margin-left: 0px;
+    }
+}

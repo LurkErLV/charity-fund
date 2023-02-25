@@ -1,0 +1,175 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+
+    margin: 30px 0 80px 0;
+
+    width: 1350px;
+
+    text-align: center;
+}
+
+.socialNetworks {
+    width: 660px;
+    height: 285px;
+
+    background: rgba(29, 30, 35, 0.05);
+    border-radius: 12px;
+}
+
+.phone {
+    width: 660px;
+    height: 285px;
+
+    background: linear-gradient(90deg, #95B9A5 0%, #EECD9B 100%);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+
+    color: #1D1E23;
+
+    margin-top: 50px;
+}
+
+.description {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #1D1E23;
+
+    margin: 18px 115px 35px 115px;
+}
+
+.phoneNumber {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+
+    width: 230px;
+    height: 50px;
+
+    background: rgba(29, 30, 35, 0.1);
+    border-radius: 12px;
+
+    color: #1D1E23;
+}
+
+.phoneIcon {
+    width: 20px;
+    height: 20px;
+
+    background: url("../icons/Phone.svg");
+
+    margin-right: 15px;
+}
+
+.socialNetworks_container {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 35px;
+}
+
+.socialNetwork_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+
+    color: #D2D2D2;
+
+    width: 155px;
+    height: 50px;
+
+    background: #1D1E23;
+    border-radius: 12px;
+}
+
+.socialNetwork_block:hover {
+    color: #D2D2D2;
+}
+
+.socialNetwork_block:first-of-type {
+    margin-right: 20px;
+}
+
+.facebookIcon {
+    width: 22px;
+    height: 22px;
+
+    background: url("../icons/Facebook.svg");
+
+    margin-right: 10px;
+}
+
+.instagramIcon {
+    width: 22px;
+    height: 22px;
+
+    background: url("../icons/Instagram.svg");
+
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialNetworks {
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .container {
+        width: 600px;
+    }
+
+    .socialNetworks {
+        width: 350px;
+        height: 400px;
+    }
+
+    .socialNetworks_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .socialNetwork_block:first-of-type {
+        margin: 0 0 20px 0;
+    }
+
+    .phone {
+        width: 350px;
+        height: 400px;
+    }
+}
+

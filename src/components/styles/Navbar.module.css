@@ -1,0 +1,366 @@
+/* Desktop Navbar */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(29, 30, 35, 0.05);
+
+    height: 78px;
+}
+
+.navbar .burger {
+    display: none;
+}
+
+.navbar .title {
+    display: flex;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    text-decoration: none;
+
+    color: #95B9A5;
+}
+
+.navbar .title::after {
+    content:"";
+
+    display: block;
+
+    margin-left: 35px;
+
+    height: 24px;
+    width: 2px;
+
+    cursor: none;
+    pointer-events: none;
+
+    background: rgba(29, 30, 35, 0.1);
+}
+
+.navbar .active {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: rgba(29, 30, 35, 0.9) !important;
+}
+
+.navbar .link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+
+    color: rgba(29, 30, 35, 0.7);
+
+    text-decoration: none;
+
+    margin-left: 25px;
+
+    transition: color .1s;
+}
+
+.navbar .link:hover {
+    color: rgba(29, 30, 35, 1);
+}
+
+.navbar .link:first-of-type {
+    margin-left: 35px;
+}
+
+.navbar .buttons {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .changeLanguage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 35px;
+
+    opacity: 0.7;
+
+    margin-left: 70px;
+    padding: 0 10px 0 10px;
+
+    height: 52px;
+
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: none;
+
+    color: #1D1E23;
+    background: transparent;
+
+    transition: background .15s;
+}
+
+.navbar .changeLanguage:hover {
+    background: #95B9A5;
+}
+
+.navbar .languageIcon {
+    background: url("../icons/Language.svg") no-repeat center;
+
+    margin-right: 10px;
+
+    height: 20px;
+    width: 20px;
+}
+
+.navbar .navButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 52px;
+
+    background: rgba(29, 30, 35, 0.1);
+    border-radius: 12px;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: none;
+
+    color: rgba(29, 30, 35, 0.7);
+
+    margin-left: 10px;
+    padding: 0 15px 0 15px;
+
+    transition: background .2s;
+}
+
+.navbar .navButton:hover {
+    background: rgba(29, 30, 35, 0.2);
+}
+
+.navbar .sendIcon {
+    background: url("../icons/Send.svg") no-repeat;
+
+    height: 24px;
+    width: 24px;
+
+    margin-right: 10px;
+}
+
+.navbar .mailIcon {
+    background: url("../icons/Mail.svg") no-repeat;
+
+    height: 18px;
+    width: 22px;
+
+    margin-right: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar .title::after {
+        margin-left: 15px;
+    }
+
+    .navbar .link:first-of-type {
+        margin-left: 15px;
+    }
+
+    .navbar .link {
+        margin-left: 10px;
+    }
+
+    .navbar .changeLanguage {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .navbar .navButton {
+        font-weight: 600;
+        font-size: 12px;
+
+        margin-left: 5px;
+        padding: 0 10px 0 10px;
+    }
+}
+
+/* Mobile Navbar */
+
+@media screen and (max-width: 890px){
+    .navbar {
+        justify-content: space-between;
+
+        height: 67px;
+
+        margin: 0 25px 0 25px;
+
+        overflow: hidden;
+
+        background: #FBFBFB;
+    }
+
+    .navbar .closeBurger {
+        z-index: 100;
+
+        display: flex !important;
+        align-content: center;
+        justify-content: center;
+
+        background: #95B9A5;
+        border-radius: 7px;
+
+        border: none;
+
+        height: 30px;
+        width: 30px;
+    }
+
+    .navbar .openBurger {
+        z-index: 100;
+
+        display: flex !important;
+        align-content: center;
+        justify-content: center;
+
+        background: #1D1E23;
+        border-radius: 7px;
+
+        border: none;
+
+        height: 30px;
+        width: 30px;
+    }
+
+    .navbar .openBurgerIcon {
+        background: url("../icons/Burger.svg") no-repeat center;
+        filter: invert(100%);
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar .closeBurgerIcon {
+        background: url("../icons/Burger.svg") no-repeat center;
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .navbar .title {
+            z-index: 100;
+
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.03em;
+
+            text-decoration: none;
+
+            align-items: center;
+
+            color: #080808;
+    }
+
+    .navbar .title:after {
+        display: none;
+    }
+
+    .navbar .links {
+        display: none;
+        flex-direction: column;
+        justify-content: space-around;
+
+        position: absolute;
+
+        width: 100vw;
+        height: 100vh;
+
+        background: #95B9A5;
+    }
+
+    .navbar .link {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 27px;
+
+        margin: 35px 0 0 25px;
+    }
+
+    .navbar .link:first-of-type {
+        margin: 100px 0 0 25px;
+    }
+
+    .navbar .active {
+        font-weight: 600;
+
+        color: #1D1E23;
+    }
+
+    .navbar .openMenu {
+        display: flex;
+        top: 0;
+        left: 0;
+
+        animation: menuIn .5s ease-out;
+    }
+
+    .navbar .closeMenu {
+        display: flex;
+        top: 0;
+        left: 0;
+        transform: translateY(-100%);
+        animation: menuOut .5s ease-out;
+    }
+
+    .navbar .openButtons {
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: stretch;
+
+        height: 200px;
+        width: 100%;
+    }
+
+    .navbar .closeButtons {
+        display: none;
+    }
+
+    .navbar .navButton {
+        margin: 5px 10px 0 10px;
+
+    }
+    
+    @keyframes menuIn {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes menuOut {
+        from {
+            transform: translateY(0);
+        }
+        to {
+            transform: translateY(-100%);
+        }
+    }
+
+    .navbar .buttons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar .title {
+        color: #FBFBFB;
+    }
+}

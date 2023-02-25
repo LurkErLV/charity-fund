@@ -1,0 +1,55 @@
+.hotline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #95B9A5;
+
+    height: 54px;
+    padding: 0 21.5vw 0 21.5vw;
+}
+
+.title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+
+    color: #1D1E23;
+}
+
+.phoneNumber {
+    display: flex;
+
+    text-decoration: none;
+}
+
+.number {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+
+    margin-right: 13px;
+
+    color: #1D1E23;
+}
+
+.phoneIcon {
+    background: url("../icons/Phone.svg") no-repeat;
+
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width: 890px) {
+    .hotline {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hotline {
+        padding: 0 5px 0 5px;
+    }
+}
