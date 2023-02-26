@@ -30,7 +30,7 @@ function Navbar(props) {
                             <span className={styles.languageIcon}></span>
                             {props.lang === "ua" ? "EN" : "UA"}
                         </a>
-                        <a href="" className={styles.navButton}>
+                        <a href={`/${props.lang}/request`} className={styles.navButton}>
                             <span className={styles.sendIcon}></span>
                             {t(props.lang, "request")}
                         </a>
@@ -45,7 +45,7 @@ function Navbar(props) {
                         <span className={styles.languageIcon}></span>
                         {props.lang === "ua" ? "EN" : "UA"}
                     </a>
-                    <a href="" className={styles.navButton}>
+                    <a href={`/${props.lang}/request`} className={styles.navButton}>
                         <span className={styles.sendIcon}></span>
                         {t(props.lang, "request")}
                     </a>

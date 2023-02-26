@@ -73,4 +73,8 @@ h2.title {
     .right {
         margin-right: 10px;
     }
+
+    .bar {
+        margin: 0 5px 0 5px;
+    }
 }

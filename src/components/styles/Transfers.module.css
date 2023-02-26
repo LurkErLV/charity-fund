@@ -241,4 +241,8 @@
     .payment_block {
         width: 300px;
     }
+
+    .questions {
+        width: 300px;
+    }
 }

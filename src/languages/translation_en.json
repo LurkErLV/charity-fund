@@ -26,5 +26,8 @@
   "callBelow": "Call the phone number below",
   "weOnSocialNetworks": "We are on social networks",
   "followUs": "Follow us on social media at:",
-  "helpUsWithDonations": "Here you can support us with donations:"
+  "helpUsWithDonations": "Here you can support us with donations:",
+  "requestForHelp": "Request for help",
+  "hereYouCanRequestHelp": "You can support us by donating:",
+  "downloadSampleDocs": "Download a sample docs request"
 }

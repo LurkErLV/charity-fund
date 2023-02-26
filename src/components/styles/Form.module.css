@@ -1,0 +1,144 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    width: 1350px;
+}
+
+.element {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 40px;
+
+    width: 100%;
+}
+
+.label {
+    display: flex;
+    align-items: center;
+
+    width: 210px;
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+
+    color: #1D1E23;
+}
+
+.input {
+    width: 1100px;
+    height: 40px;
+
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+
+    padding: 0 20px;
+
+    border: 1.18421px solid rgba(22, 22, 22, 0.1);
+    border-radius: 4.73684px;
+
+    background: rgba(12, 12, 12, 0.05);
+    color: #1D1E23;
+}
+
+.fileElement {
+    display: flex;
+    gap: 40px;
+}
+
+.fileInput::-webkit-file-upload-button {
+    width: 151.58px;
+    height: 54.47px;
+
+    border: none;
+    border-radius: 14.2105px;
+
+    font-size: 13px;
+
+    background: #EECD9B;
+
+    cursor: pointer;
+}
+
+.element:last-of-type {
+    margin: 155px 0 70px 0;
+}
+
+.submit {
+
+    font-weight: 400;
+    font-size: 24.125px;
+    line-height: 36px;
+
+    height: 68.76px;
+
+    border: none;
+    border-radius: 14.475px;
+
+    margin-bottom: 150px;
+
+    color: #080808;
+    background: #95B9A5;
+}
+
+.submit:hover {
+    background: rgba(149, 185, 165, 0.8);
+}
+
+@media screen and (max-width: 1400px) {
+    .form {
+        gap: 30px;
+
+        width: 700px;
+    }
+
+    .input {
+        width: 400px;
+    }
+
+    .fileElement {
+        flex-direction: column;
+        align-items: center;
+
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .form {
+        gap: 10px;
+
+        width: 300px;
+    }
+
+    .element {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-top: 30px;
+    }
+
+    .element:not(:first-of-type) {
+        margin-top: 30px;
+    }
+
+    .input {
+        width: 200px;
+    }
+
+    .fileInput {
+        width: 300px;
+    }
+}

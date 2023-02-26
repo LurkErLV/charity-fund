@@ -8,7 +8,7 @@ function Header(props) {
                 <div className={styles.textBlock}>
                     <h2 className={styles.title}>{ t(props.lang, "charityFund") }</h2>
                     <h1 className={styles.name}>{ t(props.lang, "name") }</h1>
-                    <a className={styles.support} href="">{ t(props.lang, "support") }</a>
+                    <a className={styles.support} href={`/${props.lang}/support`}>{ t(props.lang, "support") }</a>
                 </div>
 
                 <div className={styles.withUsBlock}>
